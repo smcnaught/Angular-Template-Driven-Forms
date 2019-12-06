@@ -1,0 +1,32 @@
+<div class="container">
+  <h1>Hero Form</h1>
+  <form 
+    #heroForm="ngForm"
+    (ngSubmit)="onSubmit(heroForm)">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input
+        name="Name"
+        [(ngModel)]="hero.name"
+        #Name="ngModel"
+        type="text"
+        class="form-control"
+        id="name"
+        required>
+    </div>
+
+    <div class="form-group">
+      <label for="alterEgo">Alter Ego</label>
+      <input 
+        name="alterEgo"
+        [(ngModel)]="hero.alterEgo"
+        #alterEgo="ngModel"
+        type="text"
+        class="form-control"
+        id="alterEgo">
+    </div>
+
+    <button type="submit" class="btn btn-success" [disabled]="!heroForm.form.valid">Submit</button>
+
+  </form>
+</div>
