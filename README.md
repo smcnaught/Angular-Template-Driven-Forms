@@ -1,4 +1,8 @@
-# TemplateDrivenForms
+# Angular-Template-Driven-Forms
+
+This is a demo project for how to use template driven forms when you need still need to get data from the template in the component.
+
+## Auto Generated Info
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.4.
 
